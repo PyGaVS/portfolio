@@ -1,0 +1,307 @@
+body
+{
+    background : rgb(50, 50, 50);
+    color : white;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+
+.link 
+{
+    font-size: 180%;
+    border: 1px solid rgb(33, 169, 79);
+    text-align: center;
+    width: 303px;
+    height: 202px;
+    margin: 10px;
+    border-radius: 10px;
+    background: transparent;
+    position: relative;
+    overflow:hidden;
+}
+
+.link::before
+{
+    position: absolute;
+    content:'';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(33, 169, 79);
+    z-index: -1;
+    transition: ease-out 100ms;
+}
+
+.onglet
+{
+    transition: 400ms;
+    text-decoration: none;
+    color: white;
+
+    width:303px;
+    height: 202px;
+    display:inline-block;
+
+    line-height: 6.5;
+}
+
+.link:hover::before
+{
+    /* background-color: rgb(39, 39, 39); */
+    height: 100%;
+}
+
+.link:active
+{
+    background-color: rgb(30, 30, 30);
+}
+
+.onglet:hover
+{
+    font-size:104%;
+}
+
+.alignement 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.alignement-head
+{
+    display: flex;
+}
+
+.pp
+{
+    border-radius: 30px;
+    transition: 400ms;
+}
+
+.pp:hover
+{
+    cursor: zoom-in;
+    width: 80px;
+    height: 80px;
+}
+
+.home
+{
+    outline:none;
+    text-decoration:none;
+    background:rgb(43, 179, 89);
+    color: black;
+
+    width: 70px;
+    height: 40px;
+    display:inline-block;
+    
+    line-height:2.5;
+    text-align:center;
+    border:solid black 3px;
+    border-radius:20px;
+
+}
+
+.home:hover
+{
+    background:rgb(63, 199, 109);
+    cursor: pointer;
+
+}
+
+.home:active
+{
+    background: black;
+    color: white;
+}
+
+.paragraph
+{
+    margin-left: 15px;
+}
+
+strong.title
+{
+    font-size: 140%;
+    line-height: 2.1;
+}
+
+.onglet-head
+{
+    display:flex; /*rendre flexible tout les trucs à l'intérieur*/
+
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+
+    gap: 20px;
+    border-bottom: solid rgb(106, 106, 106) 3px;
+}
+
+.gray
+{
+    color:rgb(206, 206, 206)
+}
+
+.ligne
+{
+    display: flex;
+    gap: 0px;
+}
+
+div.contact
+{
+    text-align:center;
+    margin: auto;
+    margin-top: 10%;
+
+    width: 400px;
+    height: 160px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.address
+{
+    color: white;
+    text-decoration: none;
+}
+
+.address:hover
+{
+    text-decoration: underline;
+}
+
+.skill
+{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px;
+    border-left: solid white 4px;
+    width: 400px;
+    padding-bottom: 30px;
+    padding-top: 1px;
+    padding-left: 15px;
+    transition: 0.7s;
+    
+}
+
+.alignement-skill
+{
+    font-size: 19px;
+    margin: 20px;
+    display: flex;
+    gap: 7px;
+}
+
+.paragraph-skillName
+{
+    margin-left: 15px;
+    line-height: 1.36;
+}
+
+input.contact
+{
+    margin-left: 390px;
+    background-color: rgb(0, 168, 173);
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+div.head
+{
+    display: flex;
+    justify-content :center;
+    gap: 20px;
+    line-height: 1;
+    width: 300px;
+    padding-right: 10px;
+}
+
+.alignement-head
+{
+    margin-left: 530px;
+    justify-content: center;
+}
+
+.software
+{
+    padding: 60px;
+}
+
+.gmail
+{
+    color: white;
+    text-decoration: none;
+    transition: 5s;
+}
+
+.gmail:hover
+{
+    color: rgb(255, 60, 60);
+    text-decoration: underline;
+}
+
+summary
+{
+    cursor: pointer;
+    background-color: rgb(90, 90, 90);
+    font-weight: bold;
+    font-size: 26px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+details > summary
+{
+    list-style-type: none;
+}
+
+details[open] summary ~ *{
+    animation: sweep .5s ease-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -500px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+
+details > summary::after 
+{
+    position: absolute;
+    content: "+";
+    right: 26px;
+}
+
+details[open] > summary::after 
+{
+    position: absolute;
+    content: "-";
+    right: 26px;
+}
+
+td
+{
+    height: 50px;
+    padding-left: 10px;
+}
+
+h2.skill
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li
+{
+    transition: 1s;
+}
+li:hover
+{
+    height: 40px;
+    line-height: 2.5;
+}
