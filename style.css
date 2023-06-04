@@ -127,6 +127,15 @@ strong.title
     line-height: 2.1;
 }
 
+.insta
+{
+    color: white;
+    text-decoration: none;
+}
+
+.insta:hover{
+    text-decoration: underline;
+}
 .onglet-head
 {
     display:flex; /*rendre flexible tout les trucs à l'intérieur*/
@@ -158,7 +167,8 @@ div.contact
     margin-top: 10%;
 
     width: 400px;
-    height: 160px;
+    height: min-content;
+    padding: 1rem;
 
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -180,7 +190,7 @@ div.contact
     font-family: 'Courier New', Courier, monospace;
     margin: 50px;
     border-left: solid white 4px;
-    width: 400px;
+    width: 700px;
     padding-bottom: 30px;
     padding-top: 1px;
     padding-left: 15px;
@@ -204,12 +214,24 @@ div.contact
 
 input.contact
 {
-    margin-left: 390px;
-    background-color: rgb(0, 168, 173);
+    background-color: rgb(33, 169, 79);
     width: 130px;
     height: 50px;
     border-radius: 30px;
     font-size: 16px;
+}
+
+@keyframes name {
+    from, to { color: hsl(324, 70%, 75%); }
+    10%      { color: hsl(360, 65%, 75%); }
+    20%      { color: hsl( 36, 80%, 75%); }
+    30%      { color: hsl( 72, 75%, 65%); }
+    40%      { color: hsl(108, 65%, 65%); }
+    50%      { color: hsl(144, 75%, 65%); }
+    60%      { color: hsl(180, 75%, 65%); }
+    70%      { color: hsl(216, 60%, 75%); }
+    80%      { color: hsl(252, 65%, 80%); }
+    90%      { color: hsl(288, 60%, 70%); }
 }
 
 div.head
@@ -219,13 +241,14 @@ div.head
     gap: 20px;
     line-height: 1;
     width: 300px;
-    padding-right: 10px;
+    animation: name 10s infinite;
 }
 
 .alignement-head
 {
-    margin-left: 530px;
-    justify-content: center;
+    padding: 5px 30px 5px 30px;
+    justify-content: space-between;
+    align-items: top;
 }
 
 .software
@@ -257,19 +280,20 @@ summary
     overflow: hidden;
 }
 
+
 details > summary
 {
     list-style-type: none;
 }
-
-details[open] summary ~ *{
+/*
+details[open] summary > *{
     animation: sweep .5s ease-out;
   }
   @keyframes sweep {
     0%    {opacity: 0; margin-left: -500px}
     100%  {opacity: 1; margin-left: 0px}
   }
-
+*/
 details > summary::after 
 {
     position: absolute;
@@ -284,6 +308,7 @@ details[open] > summary::after
     right: 26px;
 }
 
+
 td
 {
     height: 50px;
@@ -296,12 +321,34 @@ h2.skill
     margin-bottom: 0px;
 }
 
-li
-{
-    transition: 1s;
+@keyframes borderColor{
+    from, to { border: solid rgb(63, 199, 109, .10); }
+    50% { border: solid rgb(63, 199, 109, .90); }
 }
-li:hover
+
+.project-image
 {
-    height: 40px;
-    line-height: 2.5;
+    border-radius: 4px;
+    border: solid rgb(63, 199, 109, .10);
+    animation: borderColor 5s infinite;
+}
+
+a.leadcode
+{
+    color:rgb(206, 206, 206)
+}
+
+details 
+{
+    margin-top: 1rem;
+}
+
+ul.language-skill 
+{
+    list-style-type: none;
+}
+
+ul 
+{
+    font-size: 20px;
 }
