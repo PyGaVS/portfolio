@@ -65,11 +65,13 @@ body
 {
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .alignement-head
 {
     display: flex;
+    flex-wrap:wrap;
 }
 
 .pp
