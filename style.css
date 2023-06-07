@@ -10,10 +10,10 @@ body
     font-size: 180%;
     border: 1px solid rgb(33, 169, 79);
     text-align: center;
-    width: 303px;
-    height: 202px;
-    margin: 10px;
-    border-radius: 10px;
+    width: 18.75rem;
+    height: 12.625rem;
+    margin: 0.7rem;
+    border-radius: 0.7rem;
     background: transparent;
     position: relative;
     overflow:hidden;
