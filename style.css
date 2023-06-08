@@ -127,15 +127,16 @@ strong.title
     line-height: 2.1;
 }
 
-.insta
+.insta, .github
 {
     color: white;
     text-decoration: none;
 }
 
-.insta:hover{
+.insta:hover, .github:hover{
     text-decoration: underline;
 }
+
 .onglet-head
 {
     display:flex; /*rendre flexible tout les trucs à l'intérieur*/
