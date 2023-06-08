@@ -177,6 +177,7 @@ div.contact {
 
 @media (max-width: 640px) {
     div.contact {
+        margin-top: 40%;
         margin-left: 10%;
         margin-right: 10%;
     }
