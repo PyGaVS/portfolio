@@ -259,7 +259,6 @@ div.head
     display: flex;
     flex-wrap:wrap;
     font-size: 1rem;
-    background-color: red;
 }
 
 @media (min-width: 640px) {
