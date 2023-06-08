@@ -72,12 +72,6 @@ body
     flex-wrap:wrap;
 }
 
-.alignement-head
-{
-    display: flex;
-    flex-wrap:wrap;
-}
-
 .pp
 {
     border-radius: 30px;
@@ -250,14 +244,21 @@ div.head
     animation: name 10s infinite;
 }
 
+.alignement-head
+{
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 0.7rem;
+}
+
 @media (min-width: 640px) {
 .alignement-head
 {
     padding: 5px 30px 5px 30px;
     justify-content: space-between;
     align-items: top;
-    /*margin-left: 49rem;*/
-    background-color: red; 
+    margin-left: 49rem; 
+    font-size: 1rem;
 }}
 
 .software
