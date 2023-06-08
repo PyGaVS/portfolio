@@ -250,12 +250,13 @@ div.head
     animation: name 10s infinite;
 }
 
+@media (min-width: 640px) {
 .alignement-head
 {
     padding: 5px 30px 5px 30px;
     justify-content: space-between;
     align-items: top;
-}
+}}
 
 .software
 {
