@@ -221,6 +221,16 @@ input.contact
     font-size: 16px;
 }
 
+@media (max-width: 640px) {
+    input.contact
+    {
+        width:100px;
+        height:38px;
+        border-radius: 25px;
+        font-size: 12px;
+
+    }
+}
 @keyframes name {
     from, to { color: hsl(324, 70%, 75%); }
     10%      { color: hsl(360, 65%, 75%); }
@@ -248,7 +258,8 @@ div.head
 {
     display: flex;
     flex-wrap:wrap;
-    font-size: 0.7rem;
+    font-size: 1rem;
+    background-color: red;
 }
 
 @media (min-width: 640px) {
