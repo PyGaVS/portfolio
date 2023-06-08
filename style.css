@@ -246,7 +246,7 @@ div.head
     justify-content :center;
     gap: 20px;
     line-height: 1;
-    width: 300px;
+    width: 260px;
     animation: name 10s infinite;
 }
 
@@ -256,6 +256,8 @@ div.head
     padding: 5px 30px 5px 30px;
     justify-content: space-between;
     align-items: top;
+    /*margin-left: 49rem;*/
+    background-color: red; 
 }}
 
 .software
