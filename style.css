@@ -192,12 +192,19 @@ div.contact
     font-family: 'Courier New', Courier, monospace;
     margin: 50px;
     border-left: solid white 4px;
-    width: 90%;
+    width: 100%;
     padding-bottom: 30px;
     padding-top: 1px;
     padding-left: 15px;
     transition: 0.7s;
     
+}
+
+@media (max-width: 640px) {
+    .skill {
+        margin: 20px;
+        width: 85%;
+    }
 }
 
 .alignement-skill
@@ -372,7 +379,7 @@ ul.language-skill
 
 ul 
 {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 div.hobbies{
