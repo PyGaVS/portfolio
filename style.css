@@ -165,10 +165,10 @@ strong.title
 div.contact
 {
     text-align:center;
-    margin: auto;
     margin-top: 10%;
+    margin-left: 33%;
+    margin-right: 33%;
 
-    width: 400px;
     height: min-content;
     padding: 1rem;
 
