@@ -162,8 +162,7 @@ strong.title
     gap: 0px;
 }
 
-div.contact
-{
+div.contact {
     text-align:center;
     margin-top: 10%;
     margin-left: 33%;
@@ -176,8 +175,14 @@ div.contact
     border-radius: 20px;
 }
 
-.address
-{
+@media (max-width: 640px) {
+    div.contact {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.address {
     color: white;
     text-decoration: none;
 }
