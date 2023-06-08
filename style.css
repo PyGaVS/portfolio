@@ -45,6 +45,10 @@ body
     line-height: 6.5;
 }
 
+.onglet:focus::before{
+    background: transparent;
+}
+
 .link:hover::before
 {
     /* background-color: rgb(39, 39, 39); */
