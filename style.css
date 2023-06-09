@@ -61,6 +61,14 @@ body
     background-color: rgb(30, 30, 30);
 }
 
+@media (max-width: 640px) {
+    .link:active {
+        position: absolute;
+        color: white;
+        z-index: 4;
+    }
+}
+
 .onglet:hover
 {
     font-size:104%;
