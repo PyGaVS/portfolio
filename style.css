@@ -55,18 +55,15 @@ body
     /* background-color: rgb(39, 39, 39); */
     height: 100%;
 }
-
-.link:active
-{
+@media (min-width: 640px) {
+.link:active {
     background-color: rgb(30, 30, 30);
     
+}
 }
 
 @media (max-width: 640px) {
     .link:active {
-        color: white;
-        flood-color: none;
-        outline: none;
         -webkit-tap-highlight-color: transparent;
     }
 }
