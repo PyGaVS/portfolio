@@ -1,6 +1,7 @@
 body
 {
-    background : rgb(50, 50, 50);
+    /*background : rgb(50, 50, 50);*/
+    background-image : url('./img/void.jpg');
     color : white;
     font-family:'Arial Narrow Bold', sans-serif;
 }
@@ -307,7 +308,7 @@ div.head
 summary
 {
     cursor: pointer;
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(90, 90, 90, 0.6);
     font-weight: bold;
     font-size: 26px;
     padding: 10px;
@@ -366,6 +367,12 @@ h2.skill
     border-radius: 4px;
     border: solid rgb(63, 199, 109, .10);
     animation: borderColor 5s infinite;
+}
+
+@media (max-width: 640px) {
+    .project-image {
+        max-width: 200px;
+    }
 }
 
 a.leadcode
