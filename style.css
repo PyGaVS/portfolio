@@ -325,9 +325,12 @@ summary
 }
 
 
-details > summary
-{
+details > summary {
     list-style-type: none;
+}
+
+details > summary:active {
+    -webkit-tap-highlight-color: transparent;
 }
 /*
 details[open] summary > *{
