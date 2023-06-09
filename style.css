@@ -15,7 +15,7 @@ body
     height: 12.625rem;
     margin: 0.7rem;
     border-radius: 0.7rem;
-    background: transparent;
+    background: rgb(63, 199, 109, 0.04);
     position: relative;
     overflow:hidden;
 }
