@@ -63,7 +63,6 @@ body
 
 @media (max-width: 640px) {
     .link:active {
-        position: absolute;
         color: white;
         z-index: 4;
     }
