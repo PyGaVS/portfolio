@@ -59,12 +59,14 @@ body
 .link:active
 {
     background-color: rgb(30, 30, 30);
+    
 }
 
 @media (max-width: 640px) {
     .link:active {
         color: white;
-        z-index: 4;
+        flood-color: none;
+        outline: none;
     }
 }
 
