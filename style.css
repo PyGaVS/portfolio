@@ -70,10 +70,12 @@ body
         -webkit-tap-highlight-color: transparent;
         tap-highlight-color: transparent;
         box-decoration-break: none;
+        /*
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        */
     }
 }
 
