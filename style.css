@@ -68,9 +68,10 @@ body
         flood-color: none;
         outline: none;
         -webkit-tap-highlight-color: transparent;
+        /*
         tap-highlight-color: transparent;
         box-decoration-break: none;
-        /*
+        
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
