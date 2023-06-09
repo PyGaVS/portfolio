@@ -149,7 +149,7 @@ strong.title
 
 .onglet-head
 {
-    display:flex; /*rendre flexible tout les trucs à l'intérieur*/
+    display:flex;
 
     width: 90%;
     margin-left: 15px;
