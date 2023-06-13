@@ -1,9 +1,27 @@
+html {
+    background-image : url('./img/void.jpg');
+}
 body
 {
     /*background : rgb(50, 50, 50);*/
-    background-image : url('./img/void.jpg');
+    
     color : white;
     font-family:'Arial Narrow Bold', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+    height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(50, 50, 50);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(33, 169, 79); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: solid 3px rgb(50, 50, 50)
 }
 
 .link 
@@ -206,8 +224,9 @@ div.contact {
 {
     font-family: 'Courier New', Courier, monospace;
     margin: 50px;
+    margin-top: 5px;
     border-left: solid white 4px;
-    width: 100%;
+    width: 90%;
     padding-bottom: 30px;
     padding-top: 1px;
     padding-left: 15px;
