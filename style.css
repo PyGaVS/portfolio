@@ -125,7 +125,7 @@ body::-webkit-scrollbar-thumb {
     background:rgb(43, 179, 89);
     color: black;
 
-    width: 70px;
+    width: 50px;
     height: 40px;
     display:inline-block;
     
@@ -474,6 +474,13 @@ pre.code {
     /*position:absolute;*/
     display: inline-block;
     cursor:text;
+    margin-right: 5px;
+}
+
+@media (max-width: 640px) {
+    pre.code {
+        font-size: 0.8rem;
+    }
 }
 
 div.code {
