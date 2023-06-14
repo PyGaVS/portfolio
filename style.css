@@ -168,7 +168,12 @@ body::-webkit-scrollbar-thumb {
 strong.title
 {
     font-size: 140%;
-    line-height: 2.1;
+}
+
+@media (max-width: 640px) {
+    strong.title {
+        font-size: 130%;
+    }
 }
 
 .insta, .github
@@ -184,7 +189,7 @@ strong.title
 .onglet-head
 {
     display:flex;
-
+    align-items: center;
     width: 90%;
     margin-left: 15px;
     margin-top: 20px;
