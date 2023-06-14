@@ -487,6 +487,7 @@ pre.code {
 
 @media (max-width: 640px) {
     pre.code {
+        padding: 0.5rem;
         font-size: 0.4rem;
         transition: 500ms;
     }
