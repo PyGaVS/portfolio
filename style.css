@@ -493,6 +493,7 @@ pre.code {
     }
 
     pre.code:hover {
+        padding: 1rem;
         font-size: 1rem;
     }
 }
