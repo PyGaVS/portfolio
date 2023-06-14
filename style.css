@@ -161,6 +161,13 @@ body::-webkit-scrollbar-thumb {
     margin-left: 2rem;
 }
 
+@media (max-width: 640px) {
+    .paragraph-with-code
+{
+    margin-left: 1rem;
+}
+}
+
 strong.title
 {
     font-size: 140%;
