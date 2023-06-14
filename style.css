@@ -7,6 +7,7 @@ body
     
     color : white;
     font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
 }
 
 body::-webkit-scrollbar {
@@ -36,6 +37,7 @@ body::-webkit-scrollbar-thumb {
     background: rgb(63, 199, 109, 0.04);
     position: relative;
     overflow:hidden;
+    /*display: block;*/
 }
 
 .link::before
@@ -56,11 +58,9 @@ body::-webkit-scrollbar-thumb {
     transition: 400ms;
     text-decoration: none;
     color: white;
-
     width:18.75rem;
     height: 12.625rem;
     display:inline-block;
-
     line-height: 6.5;
 }
 
@@ -96,6 +96,13 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
+}
+
+.align-result{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
 }
 
 .pp
@@ -147,6 +154,11 @@ body::-webkit-scrollbar-thumb {
 {
     margin-left: 15px;
     margin-right: 5px;
+}
+
+.paragraph-with-code
+{
+    margin-left: 2rem;
 }
 
 strong.title
@@ -290,10 +302,10 @@ input.contact
 div.head
 {
     display: flex;
-    justify-content :center;
+    justify-content: left;
     gap: 20px;
     line-height: 1;
-    width: 260px;
+    width: 240px;
     animation: name 10s infinite;
 }
 
@@ -302,6 +314,13 @@ div.head
     display: flex;
     flex-wrap:wrap;
     font-size: 1rem;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 0% 1% 0% 1%;
+    align-items: center;
+    padding-right: 5px;
+
+    
 }
 
 @media (min-width: 640px) {
@@ -309,8 +328,7 @@ div.head
 {
     padding: 5px 30px 5px 30px;
     justify-content: space-between;
-    align-items: top;
-    margin-left: 37rem; 
+    
     font-size: 1rem;
 }}
 
@@ -337,7 +355,7 @@ summary
     cursor: pointer;
     background-color: rgb(90, 90, 90, 0.6);
     font-weight: bold;
-    font-size: 26px;
+    font-size: 2rem;
     padding: 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -388,8 +406,8 @@ h2.skill
 }
 
 @keyframes borderColor{
-    from, to { border: solid rgb(63, 199, 109, .10); }
-    50% { border: solid rgb(63, 199, 109, .90); }
+    from, to { border: 2px solid rgb(63, 199, 109, .10); }
+    50% { border: 2px solid rgb(63, 199, 109, .90); }
 }
 
 .project-image
@@ -415,7 +433,7 @@ details
     margin-top: 1rem;
 }
 
-ul.language-skill 
+ul.no-style 
 {
     list-style-type: none;
 }
@@ -444,4 +462,28 @@ div.hobbies > div {
 
 div.hobbies > div > * {
     margin: 0.25rem;
+}
+
+pre.code {
+    background : rgb(50, 50, 50);
+    animation: borderColor 5s infinite;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    padding: 1rem;
+    border-radius: 5px;
+    /*position:absolute;*/
+    display: inline-block;
+    cursor:text;
+}
+
+div.code {
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+div.result {
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+    padding-right: 1rem;
 }

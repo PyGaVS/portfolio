@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALL Lylian - Mes études</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="onglet-head">
+    <a class ="home" href=index.html>Retour</a> 
+    <strong class="title">Documentation personnelle</strong>
+    </div>
+    <div class ="paragraph-with-code">
+
+        <h2><strong>HTML / CSS</strong></h2>
+<!------------------------------------------------------------------------------>
+<strong>Header :</strong>
+    <div class="code">
+        <pre class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8">
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</pre>
+<!--<p class="gray"></p>-->
+    </div>
+<!------------------------------------------------------------------------------>
+<strong>Ajouter du css :</strong>
+    <div class="code">
+
+        <pre class="code">
+&lt;link rel="stylesheet" href="style.css">
+</pre>
+    <p class="gray">Ceci joint un fichier css au nom de "style.css"</p>
+
+<!--
+<pre class="code">
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+</pre>
+<p class="gray">Ceci permet de joindre les icônes de Font Awesome</p>
+-->
+
+    </div>
+<!------------------------------------------------------------------------------>
+<strong>Les listes :</strong>
+    <div class="code">
+        <div class="align-result">
+            <pre class="code">
+&lt;ul>
+    &lt;li>banane&lt;/li>
+    &lt;li>pastèque&lt;/li>
+    &lt;li>abricot&lt;/li>
+&lt;/ul>
+&lt;ol>
+    &lt;li>a&lt;/li>
+    &lt;li>b&lt;/li>
+    &lt;li>c&lt;/li>
+&lt;/ol>
+</pre>
+            <div>
+                <p>résultat :</p>
+                <div class="result">
+                    <ul>
+                        <li>banane</li>
+                        <li>pastèque</li>
+                        <li>abricot</li>
+                    </ul>
+                    <ol>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <p class="gray">&lt;ul>&lt;/ul> : liste désordonnée (unordered list)</p>
+        <p class="gray">&lt;ol>&lt;/ol> : liste ordonnée (ordered list)</p>
+        <p class="gray">&lt;li>&lt;/li> : élément d'une liste (list item)</p>
+        <p class="gray">On peut remplacer les points ou les numéros avec du css :</p>
+        <div class="align-result">
+            <pre class="code">
+ul {
+    list-style-type: square;
+}
+
+/* On eput aussi affecter 
+les list item en remplaçant 
+ul par li directement */
+</pre>
+            <div>
+                <p>résultat :</p>
+                <div class="result">
+                    <ul style="list-style-type:square;">
+                        <li>banane</li>
+                        <li>pastèque</li>
+                        <li>abricot</li>
+                    </ul>
+                    <ol>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!------------------------------------------------------------------------------>
+
+    </div>
+
+</body>
+</html>
