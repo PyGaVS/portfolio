@@ -150,20 +150,17 @@ body::-webkit-scrollbar-thumb {
     -webkit-tap-highlight-color: transparent;
 }
 
-.paragraph
-{
+.paragraph {
     margin-left: 15px;
     margin-right: 5px;
 }
 
-.paragraph-with-code
-{
+.paragraph-with-code {
     margin-left: 2rem;
 }
 
 @media (max-width: 640px) {
-    .paragraph-with-code
-{
+    .paragraph-with-code {
     margin-left: 1rem;
 }
 }
@@ -481,7 +478,7 @@ pre.code {
     /*position:absolute;*/
     display: inline-block;
     cursor:text;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 @media (max-width: 640px) {
