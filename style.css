@@ -480,7 +480,6 @@ pre.code {
     margin-top: 0rem;
     padding: 1rem;
     border-radius: 5px;
-    /*position:absolute;*/
     display: inline-block;
     cursor:text;
     margin-right: 10px;
@@ -488,7 +487,12 @@ pre.code {
 
 @media (max-width: 640px) {
     pre.code {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
+        transition: 500ms;
+    }
+
+    pre.code:hover {
+        font-size: 1rem;
     }
 }
 
