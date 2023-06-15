@@ -487,15 +487,8 @@ pre.code {
 
 @media (max-width: 640px) {
     pre.code {
-        padding: 0.5rem;
-        padding-bottom: 2rem;
-        font-size: 0.4rem;
-        transition: 500ms;
-    }
-
-    pre.code:hover {
-        padding: 1rem;
-        font-size: 1rem;
+        padding: 0.8rem;
+        font-size: 0.8rem;
     }
 }
 
