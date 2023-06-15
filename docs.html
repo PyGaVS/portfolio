@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BALL Lylian - Mes études</title>
+    <style>
+        table.border > * > * > *, table.border {
+            border: solid;
+            border-collapse:collapse;
+        }
+    </style>
+    <title>BALL Lylian - Documentation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
@@ -42,17 +48,21 @@
 &lt;link rel="stylesheet" href="style.css">
 </pre>
     <p class="gray">Ceci joint un fichier css au nom de "style.css"</p>
+    </div>
 
-<!--
-<pre class="code">
+<!------------------------------------------------------------------------------>
+<strong>Importer la librairie Font Awesome :</strong>
+    <div class="code">
+        <pre class="code">
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
 integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
 crossorigin="anonymous" referrerpolicy="no-referrer" />
 </pre>
-<p class="gray">Ceci permet de joindre les icônes de Font Awesome</p>
--->
-
+        <p class="gray">Ceci permet de joindre les icônes de Font Awesome via
+        <a class = "github" href="https://fontawesome.com/search?o=r&m=free" target="_blank"> ce lien</a>
+        </p>
     </div>
+
 <!------------------------------------------------------------------------------>
 <strong>Les listes :</strong>
     <div class="code">
@@ -118,6 +128,98 @@ ul par li directement */
         </div>
 
     </div>
+
+<!------------------------------------------------------------------------------>
+<strong>Les tableaux :</strong>
+    <div class="code">
+        <div class="align-result">
+            <pre class="code">
+&lt;table>
+&lt;thead>
+    &lt;tr>
+        &lt;th>Numéro&lt;/th>
+        &lt;th colspan='2'>Combinaison&lt;/th>
+    &lt;/tr>
+&lt;/thead>
+&lt;tbody>
+    &lt;tr>
+        &lt;td>1&lt;/td>
+        &lt;td>Fraise&lt;/td>
+        &lt;td>Banane&lt;/td>
+    &lt;/tr>&lt;tr>
+        &lt;td>2&lt;/td>
+        &lt;td>Amande&lt;/td>
+        &lt;td>Noisette&lt;/td>
+    &lt;/tr>
+&lt;/tbody>
+&lt;/table>
+</pre>
+            <div>
+                <p>résultat :</p>
+                <div class="result">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Numéro</th>
+                                <th colspan='2'>Combinaison</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Fraise</td>
+                                <td>Banane</td>
+                            </tr><tr>
+                                <td>2</td>
+                                <td>Amande</td>
+                                <td>Noisette</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <p class="gray">&lt;table>&lt;/table> : créer un tableau</p>
+        <p class="gray">&lt;tbody>&lt;/tbody> et &lt;thead>&lt;/thead> servent à organiser le tableau 
+            de la même manière qu'une page html.</p>
+        <p class="gray">&lt;tr>&lt;/tr> : ligne d'un tableau (table row)</p>
+        <p class="gray">&lt;th>&lt;/th> / &lt;td>&lt;/td> : les cellules d'un tableau (table header / table data)</p>
+        <p class="gray">Les attributs "colspan" et "rowspan" permet de faire occuper plus de case à une cellule d'un tableau </p>
+        <div class="align-result">
+            <pre class="code">
+table > * > * > *, table {
+    border: solid;
+    border-collapse:collapse;
+}
+</pre>
+            <div>
+                <p>résultat :</p>
+                <div class="result">
+                    <table class="border">
+                        <thead>
+                            <tr>
+                                <th>Numéro</th>
+                                <th colspan='2'>Combinaison</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Fraise</td>
+                                <td>Banane</td>
+                            </tr><tr>
+                                <td>2</td>
+                                <td>Amande</td>
+                                <td>Noisette</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <p class="gray">Ce css permet d'ajouter les bordures d'un tableau en sélectionnant la table et les cellules</p>
+    </div>
+
 <!------------------------------------------------------------------------------>
 
     </div>

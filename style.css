@@ -508,5 +508,6 @@ div.result {
     background-color: white;
     border: solid 2px black;
     color: black;
+    padding: 2px;
     padding-right: 1rem;
 }
