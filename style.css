@@ -552,4 +552,10 @@ div.parts > a {
     border-radius: 0.5rem;
 
     text-decoration: none;
+    transition: 200ms;
+}
+
+div.parts > a:hover {
+    transform: translate(0%, 10%);
+    background-color:rgb(33, 169, 79);
 }
