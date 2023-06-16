@@ -555,7 +555,14 @@ div.parts > a {
     transition: 200ms;
 }
 
-div.parts > a:hover {
+div.parts > a:active {
     transform: translate(0%, 10%);
     background-color:rgb(33, 169, 79);
+}
+
+@media (min-width: 640px) {
+    div.parts > a:hover {
+        transform: translate(0%, 10%);
+        background-color:rgb(33, 169, 79);
+    }
 }
