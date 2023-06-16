@@ -558,6 +558,7 @@ div.parts > a {
 div.parts > a:active {
     transform: translate(0%, 10%);
     background-color:rgb(33, 169, 79);
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width: 640px) {
