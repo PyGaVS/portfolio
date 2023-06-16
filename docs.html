@@ -23,10 +23,25 @@
     <strong class="title">Documentation personnelle</strong>
     </div>
     <div class ="paragraph-with-code">
+        <h2><strong>Sommaire</strong></h2>
+        <div class="doc-summary">
+            <strong>HTML / CSS</strong>
+            <div class="parts">
+                <a href ="#Header">Header</a>
+                <a href ="#Ajouter-du-css">Ajouter du css</a>
+                <a href ="#Font-Awesome">Font Awesome</a>
+                <a href ="#Les-listes">Les listes</a>
+                <a href ="#Les-tableaux">Les tableaux</a>
+                <a href ="#Les-images">Les images</a>
+                <a href ="#Les-liens-hypertextes">Les liens hypertextes</a>
+            </div>
+        </div>
+
+        
 
         <h2><strong>HTML / CSS</strong></h2>
 <!------------------------------------------------------------------------------>
-<strong>Header :</strong>
+<strong id="Header">Header :</strong>
     <div class="code">
         <pre class="code">
 &lt;!DOCTYPE html&gt;
@@ -41,7 +56,7 @@
 </pre>
     </div>
 <!------------------------------------------------------------------------------>
-<strong>Ajouter du css :</strong>
+<strong id="Ajouter-du-css">Ajouter du css :</strong>
     <div class="code">
         <pre class="code">
 &lt;link rel="stylesheet" href="style.css">
@@ -50,7 +65,7 @@
     </div>
 
 <!------------------------------------------------------------------------------>
-<strong>Importer la librairie Font Awesome :</strong>
+<strong id="Font-Awesome">Importer la librairie Font Awesome :</strong>
     <div class="code">
         <pre class="code">
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
@@ -63,7 +78,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
 
 <!------------------------------------------------------------------------------>
-<strong>Les listes :</strong>
+<strong id="Les-listes">Les listes :</strong>
     <div class="code">
         <div class="align-result">
             <pre class="code">
@@ -129,7 +144,7 @@ ul par li directement */
     </div>
 
 <!------------------------------------------------------------------------------>
-<strong>Les tableaux :</strong>
+<strong id="Les-tableaux">Les tableaux :</strong>
     <div class="code">
         <div class="align-result">
             <pre class="code">
@@ -222,14 +237,14 @@ table td, table th , table  {
     </div>
 
 <!------------------------------------------------------------------------------>
-<strong>Les images :</strong>
+<strong id="Les-images">Les images :</strong>
     <div class="code">
         <div class="align-result">
             <pre class="code">
 &lt;img src="img/roller_jump.jpg" alt="roller" width=300rem/>
 </pre>
             <div>
-                <p> résultat : </p>
+                <p>résultat : </p>
                 <div class="result">
                     <img src="img/roller_jump.jpg" alt="roller" width=200rem/>
                 </div>
@@ -240,7 +255,23 @@ table td, table th , table  {
         <p class="gray">Ajuster la taille avec "width" et "height" (la hauteur sera ajusté automatiquement si elle n'est pas précisée)</p>
     </div>
 <!------------------------------------------------------------------------------>
-
+<strong id="Les-liens-hypertextes">Les liens hypertextes :</strong>
+    <div class="code">
+        <div class="align-result">
+            <pre class="code">
+&lt;a href ="https://github.com/PyGaVS" target='_blank'>Mon github&lt;/a>
+</pre>
+            <div>
+                <p>résultat : </p>
+                <div class="result">
+                    <a href ="https://github.com/PyGaVS" target='_blank'>Mon github</a>
+                </div>
+            </div>
+        </div>
+        <p class="gray">Ceci est un redirection sous forme de lien ou de bouton vers mon compte github</p>
+        <p class="gray">"target='_blank'" permet d'ouvrir un nouvel onglet quand tu clique sur le lien</p>
+    </div>
+<!------------------------------------------------------------------------------>
     </div>
 
 </body>
