@@ -480,7 +480,8 @@ pre.code {
     margin-top: 0rem;
     padding: 1rem;
     border-radius: 5px;
-    display: inline-block;
+    /*display: inline-block;*/
+    overflow-x:scroll;
     cursor:text;
     margin-right: 10px;
 }

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        table.border > * > * > *, table.border {
+        table.border td, table.border th , table.border {
             border: solid;
             border-collapse:collapse;
+            padding: 5px;
         }
     </style>
     <title>BALL Lylian - Documentation</title>
@@ -182,12 +183,13 @@ ul par li directement */
             de la même manière qu'une page html.</p>
         <p class="gray">&lt;tr>&lt;/tr> : ligne d'un tableau (table row)</p>
         <p class="gray">&lt;th>&lt;/th> / &lt;td>&lt;/td> : les cellules d'un tableau (table header / table data)</p>
-        <p class="gray">Les attributs "colspan" et "rowspan" permet de faire occuper plus de cases à une cellule d'un tableau </p>
+        <p class="gray">Les attributs "colspan" et "rowspan" permettent de faire occuper plus de cases à une cellule d'un tableau </p>
         <div class="align-result">
             <pre class="code">
-table > * > * > *, table {
+table td, table th , table  {
     border: solid;
     border-collapse:collapse;
+    padding: 5px;
 }
 </pre>
             <div>
@@ -215,7 +217,8 @@ table > * > * > *, table {
                 </div>
             </div>
         </div>
-        <p class="gray">Ce css permet d'ajouter les bordures d'un tableau en sélectionnant la table et les cellules</p>
+        <p class="gray">Ce css permet d'ajouter les bordures d'un tableau en sélectionnant la table et les cellules 
+            et d'ajouter une marge (de 5px) dans les cellules histoire que les éléments ne colle pas les bordures</p>
     </div>
 
 <!------------------------------------------------------------------------------>
