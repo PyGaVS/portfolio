@@ -531,6 +531,7 @@ div.doc-summary {
 }
 
 div.parts {
+    border: solid white;
     display: flex;
     padding: 0.5rem;
     margin: 1rem;
