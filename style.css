@@ -498,6 +498,7 @@ pre.code {
     margin-bottom: 0rem;
     margin-top: 0rem;
     padding: 1rem;
+    padding-bottom: 0.5rem;
     border-radius: 5px;
     /*display: inline-block;*/
     overflow-x:scroll;
