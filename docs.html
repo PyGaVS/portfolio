@@ -34,6 +34,7 @@
                 <a href ="#Les-tableaux">Les tableaux</a>
                 <a href ="#Les-images">Les images</a>
                 <a href ="#Les-liens-hypertextes">Les liens hypertextes</a>
+                <a href ="#Les-formulaires">Les formulaires</a>
             </div>
         </div>
 
@@ -129,7 +130,7 @@ ul {
     list-style-type: square;
 }
 
-/* On eput aussi affecter 
+/* On peut aussi affecter 
 les list item en remplaçant 
 ul par li directement */
 </pre>
@@ -279,6 +280,46 @@ table td, table th , table  {
         </div>
         <p class="gray">Ceci est un redirection sous forme de lien ou de bouton vers mon compte github</p>
         <p class="gray">"target='_blank'" permet d'ouvrir un nouvel onglet quand tu clique sur le lien</p>
+    </div>
+<!------------------------------------------------------------------------------>
+<strong id="Les-formulaires">Les formulaires :</strong>
+    <div class="code">
+        <div class="align-result">
+            <pre class="code">
+&lt;form method="POST" action="?action=test&id=1">
+   &lt;label for="nom"> Nom &lt;/label>
+   &lt;input type="string" name="nom">
+   &lt;label for="fruit"> Fruit &lt;/label>
+   &lt;select name="fruit">
+       &lt;option> Fraise &lt;/option>
+       &lt;option> Kiwi &lt;/option>
+       &lt;option> Melon &lt;/option>
+   &lt;/select>
+   &lt;button type="submit">Valider&lt;/button>
+&lt;/form>
+</pre>
+            <div>
+                <p>résultat : </p>
+                <div class="result">
+                    <form method="POST" action="?action=test&id=1">
+                        <label for="nom"> Nom </label>
+                        <input type="string" name="nom">
+                        <label for="fruit"> Fruit </label>
+                        <select name="fruit">
+                            <option> Fraise </option>
+                            <option> Kiwi </option>
+                            <option> Melon </option>
+                        </select>
+                        <button type="submit">Valider</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="gray">&lt;form>&lt;/form> : créer un formulaire</p>
+        <p class="gray">&lt;input> : élément où l'utilisateur peut intéragir différemment selon le "type"</p>
+        <p class="gray">&lt;label>&lt;/label> : créer un label que l'on peut relier avec les attributs "for" et "name"</p>
+        <p class="gray">&lt;select>&lt;/select> : créer une liste de selection</p>
+        <p class="gray">L'attribut "action" sert à ajouter des éléments dans l'url (observer l'url lors du test)</p>
     </div>
 <!------------------------------------------------------------------------------>
     </div>
