@@ -155,14 +155,14 @@ pre.code::-webkit-scrollbar-thumb {
 
 }
 
-.home:hover
+.home:hover, .go-up:hover
 {
     background:rgb(63, 199, 109);
     cursor: pointer;
 
 }
 
-.home:active
+.home:active, .go-up:active
 {
     background: black;
     color: white;
