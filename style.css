@@ -569,3 +569,22 @@ div.parts > a:active {
         background-color:rgb(33, 169, 79);
     }
 }
+a.go-up {
+    outline:none;
+    text-decoration:none;
+    background:rgb(43, 179, 89);
+    color: black;
+
+    width: 50px;
+    height: 40px;
+    display:inline-block;
+
+    line-height:2.5;
+    text-align:center;
+    border:solid black 3px;
+    border-radius:20px;
+    position: fixed;
+    right: 2%;
+    bottom: 4%;
+    z-index: 9;
+}
