@@ -37,6 +37,10 @@
                 <a href ="#Les-liens-hypertextes">Les liens hypertextes</a>
                 <a href ="#Les-formulaires">Les formulaires</a>
             </div>
+            <strong>Javascript / Typescript</strong>
+            <div class="parts">
+                <a href ="#Les-bases">Les bases</a>
+            </div>
         </div>
 
         
@@ -206,7 +210,7 @@ ul par li directement */
         </div>
         <p class="gray">&lt;table>&lt;/table> : créer un tableau</p>
         <p class="gray">&lt;tbody>&lt;/tbody> et &lt;thead>&lt;/thead> servent à organiser le tableau 
-            de la même manière qu'une page html.</p>
+            de la même manière qu'une page html</p>
         <p class="gray">&lt;tr>&lt;/tr> : ligne d'un tableau (table row)</p>
         <p class="gray">&lt;th>&lt;/th> / &lt;td>&lt;/td> : les cellules d'un tableau (table header / table data)</p>
         <p class="gray">Les attributs "colspan" et "rowspan" permettent de faire occuper plus de cases à une cellule d'un tableau </p>
@@ -375,6 +379,33 @@ table td, table th , table  {
     </div>
 <!------------------------------------------------------------------------------>
 <h2><strong>Javascript / Typescript</strong></h2>
+<!------------------------------------------------------------------------------>
+<strong id="Les-bases">Les bases :</strong>
+    <div class="code">    
+        <pre class="code">
+const a = 3
+let b = 3
+b = 4
+console.log("hello world")
+</pre>
+        <div class="align-result">
+            <pre class="code">
+function additionner(v1, v2){
+    console.log(v1 + v2)
+}
+additionner(5,6)
+</pre>
+            <div>
+                <p>résultat : </p>
+                <div class="console">
+                    <p>11</p>
+                </div>
+            </div>
+        </div>
+        <p class="gray">On utilise "let" pour définir une variable modifiable et "const" pour définir une variable non modifiable. "var" est une ancienne façon 
+de définir une variables</p>
+        <p class="gray">On utilise console.log() pour afficher ce qu'on veux dans la console</p>
+    </div>
 <!------------------------------------------------------------------------------>
     </div>
     <a class = "go-up" href="#"><i class="fa-solid fa-angles-up"></i></a>

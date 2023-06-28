@@ -496,8 +496,8 @@ pre.code {
     background : rgb(50, 50, 50);
     animation: borderColor 5s infinite;
 
-    margin-bottom: 0rem;
-    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
     margin-right: 0.5rem;
     padding: 1rem;
     padding-bottom: 0.4rem;
@@ -521,9 +521,17 @@ div.code {
 
 div.result {
     background-color: white;
-    border: solid 2px black;
+    border: solid 2px gray;
     color: black;
     padding: 0.5rem;
+}
+
+div.console {
+    background-color: black;
+    border: solid 2px gray;
+    font-family: "Lucida Console";
+    color: white;
+    padding-left: 0.5rem;
 }
 
 div.doc-summary {
