@@ -1,5 +1,6 @@
 html {
     background-image : url('./img/void.jpg');
+    background-attachment: fixed;
     scroll-behavior: smooth;
 }
 body
@@ -215,13 +216,13 @@ strong.title
     }
 }
 
-.insta, .github
+.white-link
 {
     color: white;
     text-decoration: none;
 }
 
-.insta:hover, .github:hover{
+.white-link:hover{
     text-decoration: underline;
 }
 
