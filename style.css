@@ -109,11 +109,10 @@ pre.code::-webkit-scrollbar-thumb {
 }
 }
 
-@media (max-width: 640px) {
-    .link:active {
-        -webkit-tap-highlight-color: transparent;
-    }
+.link:active {
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 .onglet:hover
 {
