@@ -41,6 +41,7 @@
             <div class="parts">
                 <a href ="#Les-bases">Les bases</a>
                 <a href ="#Typer-les-variables">Typer les variables</a>
+                <a href ="#Les-conditions">Les conditions</a>
             </div>
         </div>
 
@@ -420,6 +421,40 @@ function additionner(v1: number, v2: number){
 </pre>
         <p class="gray">Le Typescript permet de typer les déclarations de varaible, on type une variable avec ":" suivi du nom du type</p>
         <p class="gray">Les principaux types sont : "number", "string", "boolean" et "any"</p>
+    </div>
+<!------------------------------------------------------------------------------>
+<strong id="Les-conditions">Les conditions :</strong>
+    <div class="code">
+        <div class="align-result">
+            <pre class="code">
+let x: number = 4;
+
+if (x > 4){
+    console.log('x est plus grand que 4')
+} else if (x==4){
+    console.log('x est égal à 4')
+} else {
+    console.log('x est plus petit que 4')
+}
+
+while(x >= 0){
+    console.log(x)
+    x -= 1
+}
+</pre>
+            <div>
+                <p>résultat : </p>
+                <div class="console">
+                    <p> x est égal à 4</p>
+                    <p> 4 </p>
+                    <p> 3 </p>
+                    <p> 2 </p>
+                    <p> 1 </p>
+                    <p> 0 </p> 
+                </div>
+            </div>
+        </div>
+        <p class="gray">"x -= 1" est un raccourci de "x = x - 1"</p>
     </div>
 <!------------------------------------------------------------------------------>
     </div>

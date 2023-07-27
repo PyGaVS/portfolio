@@ -546,7 +546,7 @@ div.console {
     border: solid 2px gray;
     font-family: "Lucida Console";
     color: white;
-    padding-left: 0.5rem;
+    padding: 0.5rem;
 }
 
 div.doc-summary {
