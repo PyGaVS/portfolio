@@ -13,6 +13,7 @@
     </style>
     <title>BALL Lylian - Documentation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -52,6 +53,7 @@
 <strong id="Header">Header :</strong>
     <div class="code">
         <pre class="code">
+            <code class="language-html">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -61,13 +63,16 @@
     &lt;title&gt;Page Title&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
+</code>
 </pre>
     </div>
 <!------------------------------------------------------------------------------>
 <strong id="Ajouter-du-css">Ajouter du css :</strong>
     <div class="code">
         <pre class="code">
+            <code class="language-html">
 &lt;link rel="stylesheet" href="style.css">
+</code>
 </pre>
         <p class="gray">Ceci joint un fichier css au nom de "style.css"</p>
     </div>
@@ -76,15 +81,19 @@
 <strong id="Font-Awesome">Font Awesome :</strong>
     <div class="code">
         <pre class="code">
+            <code class="language-html">
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
 crossorigin="anonymous" referrerpolicy="no-referrer" />
+</code>
 </pre>
         <p class="gray">Ceci permet de joindre les icônes de Font Awesome via
             <a class = "white-link" href="https://fontawesome.com/search?o=r&m=free" target="_blank"> ce lien</a> :</p>
         <div class="align-result">
             <pre class="code">
+                <code class="language-html">
 &lt;i class="fa-solid fa-thumbs-up">&lt;/i>
+</code>
 </pre>
             <div>
                 <p>résultat : </p>
@@ -99,6 +108,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <div class="code">
         <div class="align-result">
             <pre class="code">
+                <code class="language-html">
 &lt;ul>
     &lt;li>banane&lt;/li>
     &lt;li>pastèque&lt;/li>
@@ -109,6 +119,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     &lt;li>b&lt;/li>
     &lt;li>c&lt;/li>
 &lt;/ol>
+</code>
 </pre>
             <div>
                 <p>résultat :</p>
@@ -133,6 +144,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <p class="gray">On peut remplacer les points ou les numéros avec du css :</p>
         <div class="align-result">
             <pre class="code">
+                <code class="language-css">
 ul {
     list-style-type: square;
 }
@@ -140,6 +152,7 @@ ul {
 /* On peut aussi affecter 
 les list item en remplaçant 
 ul par li directement */
+</code>
 </pre>
             <div>
                 <p>résultat :</p>
@@ -165,6 +178,7 @@ ul par li directement */
     <div class="code">
         <div class="align-result">
             <pre class="code">
+                <code class="language-html">
 &lt;table>
 &lt;thead>
     &lt;tr>
@@ -184,6 +198,7 @@ ul par li directement */
     &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+</code>
 </pre>
             <div>
                 <p>résultat :</p>
@@ -218,11 +233,13 @@ ul par li directement */
         <p class="gray">Les attributs "colspan" et "rowspan" permettent de faire occuper plus de cases à une cellule d'un tableau </p>
         <div class="align-result">
             <pre class="code">
+                <code class="language-css">
 table td, table th , table  {
     border: solid;
     border-collapse:collapse;
     padding: 5px;
 }
+</code>
 </pre>
             <div>
                 <p>résultat :</p>
@@ -258,7 +275,9 @@ table td, table th , table  {
     <div class="code">
         <div class="align-result">
             <pre class="code">
+                <code class="language-html">
 &lt;img src="img/roller_jump.jpg" alt="roller" width=300rem/>
+</code>
 </pre>
             <div>
                 <p>résultat : </p>
@@ -276,7 +295,9 @@ table td, table th , table  {
     <div class="code">
         <div class="align-result">
             <pre class="code">
+                <code class="language-html">
 &lt;a href ="https://github.com/PyGaVS" target='_blank'>Mon github&lt;/a>
+</code>
 </pre>
             <div>
                 <p>résultat : </p>
@@ -293,6 +314,7 @@ table td, table th , table  {
     <div class="code">
         <div class="align-result">
             <pre class="code">
+                <code class="language-html">
 &lt;form method="GET" action="docs.html">
    &lt;label for="nom"> Nom &lt;/label>
    &lt;input type="string" name="nom">
@@ -304,6 +326,7 @@ table td, table th , table  {
    &lt;/select>
    &lt;button type="submit">Valider&lt;/button>
 &lt;/form>
+</code>
 </pre>
             <div>
                 <p>résultat : </p>
@@ -330,6 +353,7 @@ table td, table th , table  {
         <p class="gray">L'attribut "type" sert à sert à modifier le type d'entrée, voici quelque exemples :</p>
         <div class="align-result">
             <pre class="code">
+                <code class="language-html">
 &lt;p>&lt;input type="button" value="bouton">&lt;/p>
 
 &lt;p>&lt;input type="checkbox">&lt;/p>
@@ -356,6 +380,7 @@ table td, table th , table  {
 &lt;p>&lt;input type="range">&lt;/p>
 
 &lt;p>&lt;input type="text" value="texte">&lt;/p>
+</code>
 </pre>
             <div>
                 <p>résultat : </p>
@@ -385,17 +410,21 @@ table td, table th , table  {
 <strong id="Les-bases">Les bases :</strong>
     <div class="code">    
         <pre class="code">
+            <code class="language-javascript">
 const a = 3
 let b = 3
 b = 4
 console.log("hello world")
+</code>
 </pre>
         <div class="align-result">
             <pre class="code">
+                <code class="language-javascript">
 function additionner(v1, v2){
     console.log(v1 + v2)
 }
 additionner(5,6)
+</code>
 </pre>
             <div>
                 <p>résultat : </p>
@@ -412,12 +441,14 @@ de définir une variables</p>
 <strong id="Typer-les-variables">Typer les variables :</strong>
     <div class="code">    
         <pre class="code">
+            <code class="language-javascript">
 const a: number = 3       
 const c: string = 'ceci est une chaine de caractère'
 
 function additionner(v1: number, v2: number){
     console.log(v1 + v2)
 }
+</code>
 </pre>
         <p class="gray">Le Typescript permet de typer les déclarations de varaible, on type une variable avec ":" suivi du nom du type</p>
         <p class="gray">Les principaux types sont : "number", "string", "boolean" et "any"</p>
@@ -427,6 +458,7 @@ function additionner(v1: number, v2: number){
     <div class="code">
         <div class="align-result">
             <pre class="code">
+                <code class="language-javascript">
 let x: number = 4;
 
 if (x > 4){
@@ -441,6 +473,7 @@ while(x >= 0){
     console.log(x)
     x -= 1
 }
+</code>
 </pre>
             <div>
                 <p>résultat : </p>
@@ -461,5 +494,6 @@ while(x >= 0){
     <a class = "go-up" href="#"><i class="fa-solid fa-angles-up"></i></a>
 
 <br><br><br>
+<script src="prism.js"></script>
 </body>
 </html>

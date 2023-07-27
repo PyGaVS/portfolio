@@ -514,7 +514,7 @@ pre.code {
     margin-bottom: 0.3rem;
     margin-top: 0.3rem;
     margin-right: 0.5rem;
-    padding: 1rem;
+    /*padding: 1rem;*/
     padding-bottom: 0.4rem;
     border-radius: 5px;
     /*display: inline-block;*/
@@ -532,6 +532,7 @@ pre.code {
 div.code {
     margin-bottom: 2rem;
     margin-top: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 div.result {
