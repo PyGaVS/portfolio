@@ -43,6 +43,7 @@
                 <a href ="#Les-bases">Les bases</a>
                 <a href ="#Typer-les-variables">Typer les variables</a>
                 <a href ="#Les-conditions">Les conditions</a>
+                <a href ="#Les-switchs">Les switchs</a>
             </div>
         </div>
 
@@ -276,13 +277,13 @@ table td, table th , table  {
         <div class="align-result">
             <pre class="code">
                 <code class="language-html">
-&lt;img src="img/roller_jump.jpg" alt="roller" width=300rem/>
+&lt;img src="img/roller_jump.jpg" alt="roller" width=300rem />
 </code>
 </pre>
             <div>
                 <p>résultat : </p>
                 <div class="result">
-                    <img src="img/roller_jump.jpg" alt="roller" width=200rem/>
+                    <img src="img/roller_jump.jpg" alt="roller" width=200rem />
                 </div>
             </div>
         </div>
@@ -488,6 +489,60 @@ while(x >= 0){
             </div>
         </div>
         <p class="gray">"x -= 1" est un raccourci de "x = x - 1"</p>
+    </div>
+<!------------------------------------------------------------------------------>
+<strong id="Les-switchs">Les switchs :</strong>
+    <div class="code">
+        <div class="align-result">
+            <pre class="code">
+                <code class="language-javascript">
+let fruit: string = 'ba'
+
+//ALTERNATIVE 1
+
+switch (fruit){
+    case 'ba':
+        console.log('banane')
+        break
+
+    case 'ki':
+        console.log('kiwi')
+        break
+
+    case 'ma':
+        console.log('mango')
+        break
+
+    default:
+        console.log('fruit inconnu')
+}
+
+
+//ALTERNATIVE 2
+
+const fruits: {[key: string]: any} = {
+    ba: () => console.log('banane'),
+    ki: () => console.log('kiwi'),
+    ma: () => console.log('mango')
+}
+
+if (fruits['ma']){     //si la clé existe bien dans la liste associative
+    fruits['ma']()
+} else {
+    console.log("fruit inconnu")
+}
+</code>
+</pre>
+            <div>
+                <p>résultat : </p>
+                <div class="console">
+                    <p>banane</p>
+                    <p>mango</p>
+                </div>
+            </div>
+        </div>
+        <p class="gray">Si il n'y a pas de "break" à la fin d'un "case" le default sera aussi éxecuté</p>
+        <p class="gray">"() =>" défini une fonction anonyme</p>
     </div>
 <!------------------------------------------------------------------------------>
     </div>
