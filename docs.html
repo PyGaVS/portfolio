@@ -42,6 +42,7 @@
             <div class="parts">
                 <a href ="#Les-bases">Les bases</a>
                 <a href ="#Typer-les-variables">Typer les variables</a>
+                <a href ="#Les-listes-indexés">Les listes indexés</a>
                 <a href ="#Les-conditions">Les conditions</a>
                 <a href ="#Les-switchs">Les switchs</a>
             </div>
@@ -453,6 +454,51 @@ function additionner(v1: number, v2: number){
 </pre>
         <p class="gray">Le Typescript permet de typer les déclarations de varaible, on type une variable avec ":" suivi du nom du type</p>
         <p class="gray">Les principaux types sont : "number", "string", "boolean" et "any"</p>
+    </div>
+<!------------------------------------------------------------------------------>
+<strong id="Les-listes-indexés">Les listes indexés :</strong>
+    <div class="code">
+        <div class="align-result">
+            <pre class="code">
+                <code class="language-javascript">
+let liste0: number[] = [3, 7, 4.9, 3+6]
+//le type indique que la liste doit contenir uniquement des nombres
+
+let liste1: any[] = [5, "t"]
+//Cette liste peut contenir n'importe quelle type
+
+let liste2: [number, string, boolean] = [3, "a", false]
+//Les types indiqués doivent être respectés dans l'ordre et cette liste doit obligatoirement contenir 3 éléments
+
+let liste3: (number | string)[] = ["a", 4, 5]
+//Cette liste peut contenir uniquement des nombres et des chaîne de caractères
+
+console.log(liste0[0])   //Affiche le premier élément de liste0
+
+
+//Parcourir une liste :
+
+for(let i in liste1){
+    console.log(n°${i} : ${liste1[i]})
+}
+
+for(let i of liste1){
+    console.log(i)
+}
+</code>
+</pre>
+            <div>
+                <p>résultat : </p>
+                <div class="console">
+                    <p> 3 </p>
+                    <p> n°0 : 5 </p>
+                    <p> n°1 : t </p>
+                    <p> 5 </p>
+                    <p> t </p>
+                </div>
+            </div>
+        </div>
+        <p class="gray">Dans une boucle for, on peut utiliser "in" pour récupérer l'index ou "of" pour directement récupérer la valeur</p>
     </div>
 <!------------------------------------------------------------------------------>
 <strong id="Les-conditions">Les conditions :</strong>
