@@ -109,7 +109,7 @@ pre.code::-webkit-scrollbar-thumb {
 }
 }
 
-.link:active {
+.link:active, .go-contact:active {
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -171,7 +171,7 @@ pre.code::-webkit-scrollbar-thumb {
 
 }
 
-.home:active, .go-up:active, .go-contact:active .contact-btn:active
+.home:active, .go-up:active, .contact-btn:active
 {
     background: black;
     color: white;
