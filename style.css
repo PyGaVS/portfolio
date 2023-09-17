@@ -164,26 +164,6 @@ pre.code::-webkit-scrollbar-thumb {
 
 }
 
-.contact-btn
-{
-    outline:none;
-    text-decoration:none;
-    background: var(--green);
-    color: black;
-
-    width: 55px;
-    height: 44px;
-    display:inline-block;
-    
-    line-height:1.45;
-    text-align:center;
-    border:solid black 3px;
-    border-radius:20px;
-
-    font-size: 2rem;
-
-}
-
 .home:hover, .go-up:hover, .contact-btn:hover
 {
     background: var(--light-green);
@@ -362,9 +342,8 @@ div.head
     display: flex;
     flex-wrap:wrap;
     font-size: 1rem;
-    justify-content: space-between;
-    border-radius: 10px;
-    margin: 0% 1% 0% 1%;
+    justify-content: center;
+    margin: 0% 1% 1% 1%;
     align-items: center;
     padding-right: 5px;
 
@@ -375,7 +354,6 @@ div.head
 .alignement-head
 {
     padding: 5px 30px 5px 30px;
-    justify-content: space-between;
     
     font-size: 1rem;
 }}
@@ -607,8 +585,60 @@ a.go-up {
     text-align:center;
     border:solid black 3px;
     border-radius:20px;
+    
     position: fixed;
     right: 2%;
     bottom: 4%;
     z-index: 9;
+}
+
+.contact-btn
+{
+    outline:none;
+    text-decoration:none;
+    background: var(--green);
+    color: black;
+
+    width: auto;
+    height: auto;
+    padding: 7px;
+    margin: 15px;
+    display:inline-block;
+    
+    line-height:1.45;
+    text-align:center;
+    border:solid black 3px;
+    border-radius:20px;
+
+    font-size: 1rem;
+
+}
+
+@keyframes go-contact {
+    from, to { color: white; }
+    10%      { color: rgb(255, 253, 142); }
+}
+
+a.go-contact {
+
+    font-size: 2rem;
+    animation: go-contact 2s infinite;
+
+    width: 40px;
+    padding: 5px;
+
+    position: fixed;
+    left: 11%;
+    bottom: 12%;
+    z-index: 2;
+}
+
+@media(min-width: 664px){
+    .contact-btn {
+        margin: 30px;
+    }
+
+    a.go-contact {
+        left: 2000%
+    }
 }
