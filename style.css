@@ -210,7 +210,7 @@ strong.title
 }
 
 .blue-link{
-    color: rgb(93, 148, 252);
+    color: rgb(84, 134, 226);
     text-decoration: none;
 }
 
@@ -448,11 +448,6 @@ h2.skill
     max-width: 100%;
 }
 
-a.leadcode
-{
-    color:rgb(206, 206, 206)
-}
-
 details 
 {
     margin-top: 1rem;
@@ -626,6 +621,6 @@ div.black-band {
     bottom: 0;
     right: 0;
     left: 0;
-    padding: 30px;
+    padding: 27px;
     padding-left: 40px;
 }
