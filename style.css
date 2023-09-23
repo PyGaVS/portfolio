@@ -614,31 +614,14 @@ a.go-up {
 
 }
 
-@keyframes go-contact {
-    from, to { color: white; }
-    10%      { color: rgb(255, 253, 142); }
-}
+div.black-band {
+    background-color: black;
 
-a.go-contact {
-
-    font-size: 2rem;
-    animation: go-contact 2s infinite;
-
-    width: 40px;
-    padding: 5px;
-
+    /*width: 100%;*/
     position: fixed;
-    left: 11%;
-    bottom: 12%;
-    z-index: 2;
-}
-
-@media(min-width: 664px){
-    .contact-btn {
-        margin: 30px;
-    }
-
-    a.go-contact {
-        left: 2000%
-    }
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+    padding-left: 40px;
 }
