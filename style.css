@@ -204,13 +204,17 @@ strong.title
     }
 }
 
-.white-link
-{
+.white-link{
     color: white;
     text-decoration: none;
 }
 
-.white-link:hover{
+.blue-link{
+    color: rgb(93, 148, 252);
+    text-decoration: none;
+}
+
+.white-link:hover, .blue-link:hover{
     text-decoration: underline;
 }
 
