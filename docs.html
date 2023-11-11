@@ -40,11 +40,16 @@
             </div>
             <strong>Javascript / Typescript</strong>
             <div class="parts">
-                <a href ="#Les-bases">Les bases</a>
+                <a href ="#La-syntaxe-js">La syntaxe js</a>
                 <a href ="#Typer-les-variables">Typer les variables</a>
                 <a href ="#Les-listes-indexés">Les listes indexés</a>
                 <a href ="#Les-conditions">Les conditions</a>
                 <a href ="#Les-switchs">Les switchs</a>
+            </div>
+            <strong>PHP / Laravel</strong>
+            <div class="parts">
+                <a href ="#La-syntaxe-php">La syntaxe php</a>
+                <a href ="#Les classes">Loops</a>
             </div>
         </div>
 
@@ -409,7 +414,7 @@ table td, table th , table  {
 <!------------------------------------------------------------------------------>
 <h2><strong>Javascript / Typescript</strong></h2>
 <!------------------------------------------------------------------------------>
-<strong id="Les-bases">Les bases :</strong>
+<strong id="La-syntaxe-js">La syntaxe js :</strong>
     <div class="code">    
         <pre class="code">
             <code class="language-javascript">
@@ -591,6 +596,40 @@ if (fruits['ma']){     //si la clé existe bien dans la liste associative
         <p class="gray">"() =>" défini une fonction anonyme</p>
     </div>
 <!------------------------------------------------------------------------------>
+<h2><strong>Php / Laravel</strong></h2>
+<!------------------------------------------------------------------------------>
+<strong id="La-syntaxe-php">La syntaxe php :</strong>
+    <div class="code">
+<div class="align-result">
+    <pre class="code">
+        <code class="language-php">
+&lt;h1>Test&lt;/h1>
+&lt;?php
+$a = 'Hello ';
+$b = 'world'; 
+$c = '';
+$c .= $a.$b.' !';    // On ajoute à $c les chaines &amp;a, &amp;b et ' !'
+
+echo $c;            // Afficher $c sur la page web
+?>
+&lt;?= '&lt;p>'.$c.'&lt;/p>'; ?>
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="result"> 
+            <h1>Test</h1>
+Hello world !
+<p>Hello world !</p>
+        </div>
+    </div>
+</div>
+<p class="gray">Pour écrire du php il faut utiliser ces balises : &lt;?php  ?></p>
+<p class="gray">On utilise "$" pour définir ou utiliser une variable php.</p>
+<p class="gray">Pour concaténer des chaînes de caractères il faut utiliser "."</p>
+<p class="gray">"&lt;?= '&lt;p>'.$c.'&lt;/p>'; ?>" est un raccourci de "&lt;?php echo '&lt;p>'.$c.'&lt;/p>'; ?>"</p>
+</div>
+<!------------------------------La syntaxe php------------------------------------>
     </div>
     <a class = "go-up" href="#"><i class="fa-solid fa-angles-up"></i></a>
 
