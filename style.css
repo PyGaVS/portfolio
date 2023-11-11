@@ -517,6 +517,7 @@ div.result {
     border: solid 2px gray;
     color: black;
     padding: 0.5rem;
+    max-width: 800px;
 }
 
 div.console {
@@ -525,6 +526,7 @@ div.console {
     font-family: "Lucida Console";
     color: white;
     padding: 0.5rem;
+    max-width: 800px;
 }
 
 div.doc-summary {

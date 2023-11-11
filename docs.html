@@ -49,6 +49,7 @@
             <strong>PHP / Laravel</strong>
             <div class="parts">
                 <a href ="#La-syntaxe-php">La syntaxe php</a>
+                <a href="#Les-listes-indexés-php">Les listes indexés</a>
             </div>
         </div>
 
@@ -629,6 +630,70 @@ Hello world !
 <p class="gray">"&lt;?= '&lt;p>'.$c.'&lt;/p>'; ?>" est un raccourci de "&lt;?php echo '&lt;p>'.$c.'&lt;/p>'; ?>"</p>
 </div>
 <!------------------------------La syntaxe php------------------------------------>
+<strong id="Les-listes-indexés-php">Les listes indexés php :</strong>
+    <div class="code">
+<div class="align-result">
+    <pre class="code">
+        <code class="language-php">
+&lt;?php
+$semaine = ['lundi','mardi','mercredi','jeudi','vendredi','samedi']; 
+$semaine[] = 'dimanche';
+
+echo '&lt;p>';
+foreach($semaine as $jour){
+    echo $jour.' ';
+}
+echo '&lt;/p>';
+
+echo '&lt;p>';
+
+// en utilisant la méthode range($start, $end, $step)
+foreach( range(1, count($semaine), 2) as $numero){
+    echo $numero.' '.$semaine[$numero-1].' / ';
+}
+echo '&lt;/p>';
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="result"> 
+            <p>lundi mardi mercredi jeudi vendredi samedi dimanche </p>
+<p>1 lundi / 3 mercredi / 5 vendredi / 7 dimanche / </p>
+        </div>
+    </div>
+</div>
+<p class="gray">En debug, on peut aussi utiliser la méthode var_dump() pour afficher une liste ainsi que sa structure :</p>
+<div class="align-result">
+    <pre class="code">
+        <code class="language-php">
+var_dump($semaine);
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="result"> 
+            array(7) {
+  [0]=>
+  string(5) "lundi"
+  [1]=>
+  string(5) "mardi"
+  [2]=>
+  string(8) "mercredi"
+  [3]=>
+  string(5) "jeudi"
+  [4]=>
+  string(8) "vendredi"
+  [5]=>
+  string(6) "samedi"
+  [6]=>
+  string(8) "dimanche"
+}
+        </div>
+    </div>
+</div>
+<p class="gray">/!\ La méthode echo ne peut pas être utilisé pour afficher une liste, il faut utiliser une boucle.</p>
+</div>
+<!------------------------------Les listes indexés php------------------------------------>
     </div>
     <a class = "go-up" href="#"><i class="fa-solid fa-angles-up"></i></a>
 
