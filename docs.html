@@ -789,6 +789,28 @@ $list = explode(' ', $string);  //explode($separator, $string)
 </code>
 </pre>
 <p class="gray">On peut utiliser la fonction explode() pour transformer une chaîne de caractère en liste</p>
+<p class="gray">Rechercher un élément dans une liste : </p>
+<div class="align-result">
+    <pre class="code">
+        <code class="language-php">
+$fruits = ['pomme', 'orange'];
+
+if(in_array('orange', $fruits)){    //in_array($string, $list)
+    echo '"orange" est bien présent dans la liste &lt;br>';
+    echo 'Clé : '.array_search('orange', $fruits);    //array_search($string, $list)
+}
+
+
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="result"> 
+            "orange" est bien présent dans la liste <br>
+Clé : 1
+        </div>
+    </div>
+</div>
 </div>
 <!------------------------------Les listes indexés php------------------------------------>
 <strong id="Les-listes-associatives-php">Les listes associatives php :</strong>
