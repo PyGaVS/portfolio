@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        table.border td, table.border th , table.border {
-            border: solid;
-            border-collapse:collapse;
-            padding: 5px;
-        }
+
+table.border td, table.border th , table.border {
+    border: solid;
+    border-collapse:collapse;
+    padding: 5px;
+}
+
+div.container, div.item1, div.item2 {
+    border: solid black;
+    min-height: 60px;
+    min-width: 60px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.container {
+    background-color: gray;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;    /* Direction de la Flexbox */
+    flex-wrap: wrap;    /* Gérer le débordement de la Flexbox*/
+    flex-flow: row wrap;    /* Un raccourci qui rassemble les deux propriétés si-dessus*/
+    justify-content: center;    /* Position des éléments par rapport à la flex-direction */
+    align-items: flex-start;    /* Alignement des éléments */
+    gap : 20px;     /* Espace entre les éléments */
+}
+
+.item1, .item2{
+    background-color: lightblue;
+}
+
     </style>
     <title>BALL Lylian - Documentation</title>
     <link rel="stylesheet" href="style.css">
@@ -38,6 +65,10 @@
                 <a href ="#Les-liens-hypertextes">Les liens hypertextes</a>
                 <a href ="#Les-formulaires">Les formulaires</a>
             </div>
+            <strong>CSS</strong>
+            <div class="parts">
+                <a href="#Flexbox">Flexbox</a>
+            </div>
             <strong>Javascript / Typescript</strong>
             <div class="parts">
                 <a href ="#La-syntaxe-js">La syntaxe js</a>
@@ -50,6 +81,7 @@
             <div class="parts">
                 <a href ="#La-syntaxe-php">La syntaxe php</a>
                 <a href="#Les-listes-indexés-php">Les listes indexés</a>
+                <a href="#Les-listes-associatives-php">Les listes associatives</a>
             </div>
         </div>
 
@@ -412,6 +444,62 @@ table td, table th , table  {
         </div>
     </div>
 <!------------------------------------------------------------------------------>
+<h2><strong>CSS</strong></h2>
+<!------------------------------------------------------------------------------>
+<strong id="Flexbox">Flexbox :</strong>
+    <div class="code">
+<p class="gray"><a class="blue-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Guide complet pour utiliser une Flexbox ici</a>
+        avec quelque exemple de propriétés d'une Flexbox si dessous :</p>
+<pre class="code">
+    <code class="language-html">
+&lt;div class="container">
+    &lt;div class="item1">&lt;/div>
+    &lt;div class="item2">&lt;/div>
+&lt;/div>
+</code>
+</pre>
+<div class="align-result">
+    <pre class="code">
+        <code class="language-css">
+div {
+    border: solid black;
+    min-height: 60px;
+    min-width: 60px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.container {
+    background-color: gray;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;    /* Direction de la Flexbox */
+    flex-wrap: wrap;    /* Gérer le débordement de la Flexbox*/
+    flex-flow: row wrap;    /* Un raccourci qui rassemble les deux propriétés si-dessus*/
+    justify-content: center;    /* Position des éléments par rapport à la flex-direction */
+    align-items: flex-start;    /* Alignement des éléments */
+    gap : 20px;     /* Espace entre les éléments */
+}
+
+.item1, .item2{
+    background-color: lightblue;
+}
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="result"> 
+            <div class="container">
+    <div class="item1"></div>
+    <div class="item2"></div>
+</div>
+        </div>
+    </div>
+</div>
+</div>
+<!------------------------------Flexbox------------------------------------>
+
 <h2><strong>Javascript / Typescript</strong></h2>
 <!------------------------------------------------------------------------------>
 <strong id="La-syntaxe-js">La syntaxe js :</strong>
@@ -692,8 +780,47 @@ var_dump($semaine);
     </div>
 </div>
 <p class="gray">/!\ La méthode echo ne peut pas être utilisé pour afficher une liste, il faut utiliser une boucle.</p>
+<pre class="code">
+    <code class="language-php">
+$string = "a b c";
+
+$list = explode(' ', $string);  //explode($separator, $string)
+// $list = ['a', 'b', 'c']
+</code>
+</pre>
+<p class="gray">On peut utiliser la fonction explode() pour transformer une chaîne de caractère en liste</p>
 </div>
 <!------------------------------Les listes indexés php------------------------------------>
+<strong id="Les-listes-associatives-php">Les listes associatives php :</strong>
+    <div class="code">
+<div class="align-result">
+    <pre class="code">
+        <code class="language-php">
+$player = [
+    'hp'    => 200,
+    'atk'   => 90,
+    'def'   => 85,
+];
+
+$player['spd'] = 70;
+
+foreach($player as $clef => $valeur){
+	echo '&lt;p>le joueur possède '.$valeur.' en '.$clef.'&lt;/p>';
+    }
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="result"> 
+            <p>le joueur possède 200 en hp</p>
+<p>le joueur possède 90 en atk</p>
+<p>le joueur possède 85 en def</p>
+<p>le joueur possède 70 en spd</p>
+        </div>
+    </div>
+</div>
+</div>
+<!------------------------------Les listes associatives php------------------------------------>
     </div>
     <a class = "go-up" href="#"><i class="fa-solid fa-angles-up"></i></a>
 
