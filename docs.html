@@ -82,6 +82,7 @@ div.container, div.item1, div.item2 {
                 <a href ="#La-syntaxe-php">La syntaxe php</a>
                 <a href="#Les-listes-indexés-php">Les listes indexés</a>
                 <a href="#Les-listes-associatives-php">Les listes associatives</a>
+                <a href="#Préparer-et-sécuriser-une-requête-sql">Préparer et sécuriser une requête sql</a>
             </div>
         </div>
 
@@ -843,6 +844,32 @@ foreach($player as $clef => $valeur){
 </div>
 </div>
 <!------------------------------Les listes associatives php------------------------------------>
+<strong id="Préparer-et-sécuriser-une-requête-sql">Préparer et sécuriser une requête sql :</strong>
+    <div class="code">
+<p class="gray">En utilisant une liste indexée comme paramètre :</p>
+<pre class="code">
+    <code class="language-php">
+$sql = 'SELECT * FROM characters
+    WHERE hp > ? AND category = ?';
+$request = $dbh->prepare($sql);
+$request->execute([180, 'tank']);
+$characters = $request->fetchAll();
+</code>
+</pre>
+<p class="gray">En utilisant une liste associative comme paramètre :</p>
+<pre class="code">
+    <code class="language-php">
+$sql = 'SELECT * FROM characters
+    WHERE hp > :hp AND category = :category';
+$request = $dbh->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
+$request->execute(['hp' => 180, 'category' => 'tank']);
+$characters = $request->fetchAll();
+</code>
+</pre>
+<p class="gray">$bdh étant une instance de 
+    <a class="blue-link" href="https://www.php.net/manual/fr/pdo.construct.php" target="_blank">la classe PDO</a>
+</p>
+</div>
     </div>
     <a class = "go-up" href="#"><i class="fa-solid fa-angles-up"></i></a>
 
