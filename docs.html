@@ -87,6 +87,7 @@ div.container, div.item1, div.item2 {
             <strong>Laravel</strong>
             <div class="parts">
                 <a href="#Générer-une-fonctionnalité">Générer une fonctionnalité</a>
+                <a href="#Créer-les-routes">Créer les routes</a>
             </div>
         </div>
 
@@ -887,7 +888,39 @@ php artisan make:model ModelName -a
 <p class="gray">Le nom du modèle doit être au singulier et en "PascalCase".</p>
 </div>
 <!------------------------------Générer une fonctionnalité------------------------------------>
+<strong id="Créer-les-routes">Créer les routes :</strong>
+    <div class="code">
+<p class="gray">La documentation laravel sur les routes :</p>
+<p class="gray"><a class="blue-link" target="_blank" href="https://laravel.com/docs/10.x/routing">https://laravel.com/docs/10.x/routing</a></p>
+<div class="align-result">
+    <pre class="code">
+        <code class="language-php">
+Route::prefix('pre')->group(function () {
+    //Route::ressource('nom de la fonctionnalité', le contrôleur correspondant)
+    Route::resource('category', Controllers\CategoryController::class);
+});
 
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="console"> 
+
+            <p>Les routes GET POST PUT et DELETE seront créées à partir de l'url :</p>
+            <p>lien-du-site/pre/category/</p>
+        </div>
+    </div>
+</div>
+<p class="gray">Route::prefix() permet d'ajouter un préfixe dans l'url.</p>
+<p class="gray">Route::ressource permet de créer toute les routes correspondante à la fonctionnalité (index, add, create, edit, update, delete).</p>
+<p class="gray">La commande php artisan pour afficher les routes de l'appli :</p>
+<pre class="code">
+    <code class="language-php">
+php artisan route:list
+</code>
+</pre>
+</div>
+<!------------------------------Créer les routes------------------------------------>
     </div>
     <a class = "go-up" href="#"><i class="fa-solid fa-angles-up"></i></a>
 
