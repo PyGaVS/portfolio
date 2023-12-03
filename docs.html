@@ -88,6 +88,7 @@ div.container, div.item1, div.item2 {
             <div class="parts">
                 <a href="#Générer-une-fonctionnalité">Générer une fonctionnalité</a>
                 <a href="#Créer-les-routes">Créer les routes</a>
+                <a href="#Créer-les-migrations">Créer les migrations</a>
             </div>
         </div>
 
@@ -921,6 +922,55 @@ php artisan route:list
 </pre>
 </div>
 <!------------------------------Créer les routes------------------------------------>
+<strong id="Créer-les-migrations">Créer les migrations :</strong>
+    <div class="code">
+<p class="gray">La documentation laravel sur les migrations :</p>
+<p class="gray"><a class="blue-link" target="_blank" href="https://laravel.com/docs/10.x/migrations">https://laravel.com/docs/10.x/migrations</a></p>
+<p class="gray">La commande pour générer un fichier de migration :</p>
+<pre class="code">
+    <code class="language-php">
+php artisan make:migration create_players_table
+</code>
+</pre>
+<div class="align-result">
+    <pre class="code">
+        <code class="language-php">
+public function up(): void
+{
+    Schema::create('trios', function (Blueprint $table) {
+        $table->id();
+        $table->string('name');
+        $table->float('score')->default(0.00);
+        $table->foreignId('player1')->constrained('players');
+        $table->foreignId('player2')->constrained('players');
+        $table->foreignId('player3')->constrained('players');
+        $table->foreignId('coach_id')->constrained();
+        $table->timestamps();
+    });
+}
+
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="console"> 
+
+            <p>Trios(id, name, score, player1, player2, player3, coach_id, created_at, updated_at)</p>
+            <p></p>
+            <p>clé primaire : id</p>
+            <p></p>
+            <p>clés étrangères :</p>
+            <p>-player1 référence à players</p>
+            <p>-player2 référence à players</p>
+            <p>-player3 référence à players</p>
+            <p>-coach_id référence à coachs</p>
+        </div>
+    </div>
+</div>
+<p class="gray">Si le nom de la clé étrangère n'est pas de la forme "[table_au_singulier]_id", il faut préciser en paramètre la table référencé dans la méthode constrained().</p>
+<p class="gray">La méthode nullable() permet de définir que le champs peut être null.</p>
+</div>
+<!------------------------------Créer les migrations------------------------------------>
     </div>
     <a class = "go-up" href="#"><i class="fa-solid fa-angles-up"></i></a>
 
