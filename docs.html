@@ -602,9 +602,9 @@ for(let i of liste1){
 <!------------------------------------------------------------------------------>
 <strong id="Les-conditions">Les conditions :</strong>
     <div class="code">
-        <div class="align-result">
-            <pre class="code">
-                <code class="language-javascript">
+<div class="align-result">
+    <pre class="code">
+        <code class="language-javascript">
 let x: number = 4;
 
 if (x > 4){
@@ -621,21 +621,47 @@ while(x >= 0){
 }
 </code>
 </pre>
-            <div>
-                <p>résultat : </p>
-                <div class="console">
-                    <p> x est égal à 4</p>
-                    <p> 4 </p>
-                    <p> 3 </p>
-                    <p> 2 </p>
-                    <p> 1 </p>
-                    <p> 0 </p> 
-                </div>
-            </div>
+    <div>
+        <p>résulat : </p>
+        <div class="console"> 
+
+            <p>x est égal à 4</p>
+            <p>4</p>
+            <p>3</p>
+            <p>2</p>
+            <p>1</p>
+            <p>0</p>
         </div>
-        <p class="gray">"x -= 1" est un raccourci de "x = x - 1"</p>
     </div>
-<!------------------------------------------------------------------------------>
+</div>
+<p class="gray">"x -= 1" est un raccourci de "x = x - 1"</p>
+<div class="align-result">
+    <pre class="code">
+        <code class="language-javascript">
+let age:number = 18
+
+const check = (age: number): string => age >= 18 ? "majeur" : age > 0 ? "mineur" : "invalid"
+console.log(check(age));
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="console"> 
+
+            <p>majeur</p>
+        </div>
+    </div>
+</div>
+<p class="gray">La fonction check est simplifiée et elle se traduit comme :</p>
+<pre class="code">
+    <code class="language-javascript">
+function check(age: number): string {
+    return age >= 18 ? "majeur" : age > 0 ? "mineur" : "invalid"
+}
+</code>
+</pre>
+</div>
+<!------------------------------Les conditions------------------------------------>
 <strong id="Les-switchs">Les switchs :</strong>
     <div class="code">
         <div class="align-result">
