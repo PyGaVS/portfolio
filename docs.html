@@ -664,9 +664,9 @@ function check(age: number): string {
 <!------------------------------Les conditions------------------------------------>
 <strong id="Les-switchs">Les switchs :</strong>
     <div class="code">
-        <div class="align-result">
-            <pre class="code">
-                <code class="language-javascript">
+<div class="align-result">
+    <pre class="code">
+        <code class="language-javascript">
 let fruit: string = 'ba'
 
 //ALTERNATIVE 1
@@ -694,28 +694,33 @@ switch (fruit){
 const fruits: {[key: string]: any} = {
     ba: () => console.log('banane'),
     ki: () => console.log('kiwi'),
-    ma: () => console.log('mango')
+    ma: () => console.log('mango'),
+    default: console.log
 }
 
-if (fruits['ma']){     //si la clé existe bien dans la liste associative
-    fruits['ma']()
-} else {
-    console.log("fruit inconnu")
-}
+//Utiliser le switch avec une constante
+const fruit2: (...params: unknown[]) => void = fruits['kidfgh'] ?? fruits.default
+fruit2('des', 'paramètres', 'aléatoires', 4, 'fruit inconnu');
+
+//Utiliser le switch sans intermédiaire
+(fruits['ki'] ?? fruits.default)('fruit inconnu')
 </code>
 </pre>
-            <div>
-                <p>résultat : </p>
-                <div class="console">
-                    <p>banane</p>
-                    <p>mango</p>
-                </div>
-            </div>
+    <div>
+        <p>résulat : </p>
+        <div class="console"> 
+
+            <p>banane</p>
+            <p>des paramètres aléatoires 4 fruit inconnu</p>
+            <p>kiwi</p>
         </div>
-        <p class="gray">Si il n'y a pas de "break" à la fin d'un "case" le default sera aussi éxecuté</p>
-        <p class="gray">"() =>" défini une fonction anonyme</p>
     </div>
-<!------------------------------------------------------------------------------>
+</div>
+<p class="gray">Si il n'y a pas de "break" à la fin d'un "case" le default sera aussi éxecuté</p>
+<p class="gray">"() =>" défini une fonction anonyme</p>
+<p class="gray">Si le fruit n'est pas trouvé la fonction executée fonctionnera de la même manière qu'un console.log()</p>
+</div>
+<!------------------------------Les switchs------------------------------------>
 <h2><strong>Php</strong></h2>
 <!------------------------------------------------------------------------------>
 <strong id="La-syntaxe-php">La syntaxe php :</strong>
