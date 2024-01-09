@@ -56,14 +56,14 @@ div.container, div.item1, div.item2 {
         <div class="doc-summary">
             <strong>HTML / CSS</strong>
             <div class="parts">
-                <a href ="#Header">Header</a>
-                <a href ="#Ajouter-du-css">Ajouter du css</a>
-                <a href ="#Font-Awesome">Font Awesome</a>
-                <a href ="#Les-listes">Les listes</a>
-                <a href ="#Les-tableaux">Les tableaux</a>
-                <a href ="#Les-images">Les images</a>
-                <a href ="#Les-liens-hypertextes">Les liens hypertextes</a>
-                <a href ="#Les-formulaires">Les formulaires</a>
+                <a href="#Header">Header</a>
+                <a href="#Ajouter-du-css">Ajouter du css</a>
+                <a href="#Font-Awesome">Font Awesome</a>
+                <a href="#Les-listes">Les listes</a>
+                <a href="#Les-tableaux">Les tableaux</a>
+                <a href="#Les-images">Les images</a>
+                <a href="#Les-liens-hypertextes">Les liens hypertextes</a>
+                <a href="#Les-formulaires">Les formulaires</a>
             </div>
             <strong>CSS</strong>
             <div class="parts">
@@ -71,15 +71,16 @@ div.container, div.item1, div.item2 {
             </div>
             <strong>Javascript / Typescript</strong>
             <div class="parts">
-                <a href ="#La-syntaxe-js">La syntaxe js</a>
-                <a href ="#Typer-les-variables">Typer les variables</a>
-                <a href ="#Les-listes-indexés">Les listes indexés</a>
-                <a href ="#Les-conditions">Les conditions</a>
-                <a href ="#Les-switchs">Les switchs</a>
+                <a href="#La-syntaxe-js">La syntaxe js</a>
+                <a href="#Typer-les-variables">Typer les variables</a>
+                <a href="#Les-listes-indexés">Les listes indexés</a>
+                <a href="#Les-conditions">Les conditions</a>
+                <a href="#Les-switchs">Les switchs</a>
+                <a href="#Les-types-génériques">Les types génériques</a>
             </div>
             <strong>PHP</strong>
             <div class="parts">
-                <a href ="#La-syntaxe-php">La syntaxe php</a>
+                <a href="#La-syntaxe-php">La syntaxe php</a>
                 <a href="#Les-listes-indexés-php">Les listes indexés</a>
                 <a href="#Les-listes-associatives-php">Les listes associatives</a>
                 <a href="#Préparer-et-sécuriser-une-requête-sql">Préparer et sécuriser une requête sql</a>
@@ -721,6 +722,47 @@ fruit2('des', 'paramètres', 'aléatoires', 4, 'fruit inconnu');
 <p class="gray">Si le fruit n'est pas trouvé la fonction executée fonctionnera de la même manière qu'un console.log()</p>
 </div>
 <!------------------------------Les switchs------------------------------------>
+<strong id="Les-types-génériques">Les types génériques :</strong>
+    <div class="code">
+<p class="gray">Les types générique permettent de donner un type d'entrée ou de retour à une fonction que l'on pourra ensuite indiquer lors de l'appel de la fonction.</p>
+<p class="gray">Dans l'exemple si dessous, les deux paramètres v1 et v2 doivent avoir le même type "T" dont T peut varier en fonction de l'appel.</p>
+<div class="align-result">
+    <pre class="code">
+        <code class="language-javascript">
+function additionner&lt;T extends number | string | unknown[]>(v1: T, v2: T): T {
+
+    if (typeof v1 == "string"){
+        return v1 + v2 as T
+    } else if (typeof v1 == "number" &amp;&amp; typeof v2 == "number"){
+        return v1 + v2 as T
+    } else if (v1 instanceof Array &amp;&amp; v2 instanceof Array){
+        return [...v1, ...v2] as T
+    } else {
+        return "params not valid" as T
+    }
+}
+
+console.log(additionner&lt;(string | number)[]>([1, 2, 3], ["a", "u"]))
+console.log(additionner&lt;string>("hello ", "world"))
+console.log(additionner&lt;number>(6, 4))
+// On est pas obligé de mettre un type générique à l'appel de la fonction 
+// mais les deux paramètres doivent avoir le même type :
+console.log(additionner(6, 4))
+</code>
+</pre>
+    <div>
+        <p>résulat : </p>
+        <div class="console"> 
+
+            <p>[ 1, 2, 3, 'a', 'u' ]</p>
+            <p>hello world</p>
+            <p>10</p>
+            <p>10</p>
+        </div>
+    </div>
+</div>
+</div>
+<!------------------------------Les types génériques------------------------------------>
 <h2><strong>Php</strong></h2>
 <!------------------------------------------------------------------------------>
 <strong id="La-syntaxe-php">La syntaxe php :</strong>
