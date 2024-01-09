@@ -691,7 +691,7 @@ switch (fruit){
 
 //ALTERNATIVE 2
 
-const fruits: {[key: string]: any} = {
+const fruits: {[key: string]: (...params: unknown[]) => void } = {
     ba: () => console.log('banane'),
     ki: () => console.log('kiwi'),
     ma: () => console.log('mango'),
