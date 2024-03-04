@@ -693,7 +693,13 @@ switch (fruit){
 
 //ALTERNATIVE 2
 
-const fruits: {[key: string]: (...params: unknown[]) => void } = {
+//Créer un type pour la variable fruits
+type Switch = {
+    [key: string]: (...params: unknown[]) => void
+    default:  (...params: unknown[]) => void
+}
+
+const fruits: Switch = {
     ba: () => console.log('banane'),
     ki: () => console.log('kiwi'),
     ma: () => console.log('mango'),
