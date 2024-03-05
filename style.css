@@ -233,7 +233,18 @@ strong.title
 
 .gray
 {
-    color:rgb(206, 206, 206)
+    color:rgb(206, 206, 206);
+}
+
+.yellow-shine
+{
+    /*color:rgb(255, 249, 82);*/
+    animation: yellow-gray 3s infinite
+}
+
+@keyframes yellow-gray{
+    from, to { color:rgb(255, 249, 82); }
+    70% { color:rgb(206, 206, 206); }
 }
 
 .ligne
