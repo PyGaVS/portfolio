@@ -120,11 +120,17 @@ pre.code::-webkit-scrollbar-thumb {
     font-size:104%;
 }
 
-.alignement 
+.row-center
 {
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .align-result{
