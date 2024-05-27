@@ -28,13 +28,6 @@
                 <img class="project-image" src="./img/fraction.PNG" alt="project pic" width=300px/>
             </details>
             <details>
-                <summary>Sysème d'inscription et de connexion : adonisjs/css</summary>
-                <p class="gray">
-                Système d'inscription réalisé sur le framework Adonis lors de mon stage chez Leadcode qui rentre les informations dans une base de données.
-                </p>
-                <img class="project-image" src="./img/inscription.PNG" alt="project pic" width=500px/>
-            </details>
-            <details>
                 <summary>Site web sur minecraft : php/css/javascript</summary>
                 <p class="gray">
                 Cette application web disposant d'un front-end css/js est munis de quelques fonctionnalités tel qu'un onglet chat ou l'on peut
@@ -59,6 +52,15 @@
 
         <details class="big">
             <summary>Lors de mon BTS SIO</summary>
+            <h2><strong>Stage n°1</strong></h2>
+            <details>
+                <summary>Sysème d'inscription et de connexion : adonisjs/css</summary>
+                <p class="gray">
+                Système d'inscription réalisé sur le framework Adonis lors de mon stage chez Leadcode qui rentre les informations dans une base de données.
+                </p>
+                <img class="project-image" src="./img/inscription.PNG" alt="project pic" width=500px/>
+            </details>
+            <h2><strong>Année n°2</strong></h2>
             <details>
                 <summary>Site de gestion de commandes : laravel</summary>
                 <p class="gray">
@@ -66,30 +68,18 @@
                 </p>
                 <img class="project-image" src="./img/alizon.PNG" alt="project pic" width=1000px/>
             </details>
+        
             <details>
-                <summary>Outil de gestion cloud en terminal de commande : react/typescript</summary>
-                <p class="gray">
-                Cet outil permet d'accéder au objets stockées dans un s3 AWS (une base de données permettant de stocker tout type de fichier).
-                J'ai réalisé cet outil lors de mon stage à <a class="blue-link" target='_blank' href="https://www.oomade.com/">Oomade</a> qui 
-                va permettre aux développeurs de cette entreprise de faire des tests pour leurs applications.
-                J'ai fait mes tests pour cet outil en utilisant un pod k8s contenant une image <a class="blue-link" target='_blank' href="https://min.io/">Minio</a>.
-                Le rendu des vues se fait avec la librairie <a class="blue-link" target='_blank' href="https://github.com/vadimdemedes/ink">ink</a>.</p>
-                <p class="gray">Lien du projet github : 
-                <a class="white-link" href="https://github.com/Stage-2024/tui-diagnostic-tools" target='_blank'>tui-diagnostic-tools</a>
-                </p>
-                <div class="row">
-                    <img class="project-image" src="./img/tui-homeview.PNG" alt="project pic" width=1000px/>
-                    <img class="project-image" src="./img/tui.PNG" alt="project pic" width=1000px/>
-                    <img class="project-image" src="./img/tui-search.PNG" alt="project pic" width=1000px/>
-                </div>
-            </details>
-            <details>
-                <summary>Site de réservation : laravel headless</summary>
+                <summary>Site de réservation de véhicule : laravel headless</summary>
                 <p class="gray">
                 Application web permettant de réserver un véhicule grâce à un formulaire complet 
                 composé de 4 pages avec une navigation sans chargement.
                 </p>
-                <img class="project-image" src="./img/Seven.PNG" alt="project pic" width=1000px/>
+                <div class="row">
+                    <img class="project-image" src="./img/Seven-form.PNG" alt="project pic" width=1000px/>
+                    <img class="project-image" src="./img/Seven.PNG" alt="project pic" width=1000px/>
+                </div>
+                
             </details>
             <details>
                 <summary>Application de discussion : Dart Flutter</summary>
@@ -99,6 +89,41 @@
                 </p>
                 <div class="row">
                     <img class="project-image" src="./img/Selenium.PNG" alt="project pic" width=300px/>
+                    <img class="project-image" src="./img/Selenium-report.PNG" alt="project pic" width=300px/>
+                    <img class="project-image" src="./img/Selenium-search.PNG" alt="project pic" width=300px/>
+                </div>
+            </details>
+            <h2><strong>Stage n°2</strong></h2>
+            <details>
+                <summary>Outil de gestion cloud en terminal de commande : react/typescript</summary>
+                <p class="gray">
+                Cet outil permet d'accéder au objets stockées dans un s3 AWS (une base de données permettant de stocker tout type de fichier).
+                J'ai réalisé cet outil lors de mon stage à <a class="blue-link" target='_blank' href="https://www.oomade.com/">Oomade</a> qui 
+                va permettre aux développeurs de cette entreprise de faire des tests pour leurs applications.
+                J'ai fait mes tests pour cet outil en utilisant un pod k8s contenant une image <a class="blue-link" target='_blank' href="https://min.io/">Minio</a>.
+                Le rendu des vues se fait avec la librairie <a class="blue-link" target='_blank' href="https://github.com/vadimdemedes/ink">ink</a>.</p>
+                <p class="gray">Principales fonctionnalitées codées :</p>
+                <p class="gray">⛵  Navigation :  'Enter' pour selectionner un un élément, 'b'  pour retourner au niveau précédent et 'esc' pour retourner au menu.</p>
+                <p class="gray">🚪  Exit : 'esc' quand on est au menu ou 'ctrl + q'</p>
+                <p class="gray">⬇️  Download : 'd' pour télécharger un fichier (pas un dossier)</p>
+                <p class="gray">📄  Copy Past : 'c' et 'v' de la même manière que ctrl + c ctrl + v à l'exception que l'on ne peut pas sélectionner plusieurs fichier à la fois ou de dossier. Le presse-papier sera affiché dans la box jaune.</p>
+                <p class="gray">🔄  Refresh : 'r' permet de refresh la page, et le refresh est automatique lorsqu'on past ou delete.</p>
+                <p class="gray">🗑️  Delete : 'x' permet de supprimer définitivement un élément du s3 sans message de confirmation</p>
+                <p class="gray">🔎  Search : 's' permet de focus sur la barre de recherche et cela va trier les objets de la manière suivante :</p>
+                <p class="gray">-En priorité les objets où le nom commence par le str dans la barre de recherche. </p>
+                <p class="gray">-En second les objets qui contiennent le str dans la barre de recherche.</p>
+                <p class="gray">📁  Recursion : Les objets sont triés en fonction de leur nom avec récursivité dans des dossiers.</p>
+                <p class="gray">↔️  Pagination : Le nombres d'objet possède une limite (par défaut 10) d'affichage par page et il suffit d'utiliser les flèches latérales pour changer de page.</p>
+                <p class="gray">🔀  Offset : Le offset est géré de sort à pouvoir ce déplacer entre les extrémités des éléments rapidement.</p>
+                <p class="gray">ℹ️  Highlight : Les infos du fichier que l'on survole sont affichés dans la box verte.</p>
+                <p class="gray">💯  User info : Des messages tel que le loading pour un téléchargement seront affichés pour que l'utilisateur soit informé si il doit patienter lors d'une requête au s3 (comme un download).</p>
+                <p class="gray">Lien du projet github : 
+                <a class="white-link" href="https://github.com/Stage-2024/tui-diagnostic-tools" target='_blank'>tui-diagnostic-tools</a>
+                </p>
+                <div class="row">
+                    <img class="project-image" src="./img/tui-homeview.PNG" alt="project pic" width=1000px/>
+                    <img class="project-image" src="./img/tui.PNG" alt="project pic" width=1000px/>
+                    <img class="project-image" src="./img/tui-search.PNG" alt="project pic" width=1000px/>
                 </div>
             </details>
         </details>
