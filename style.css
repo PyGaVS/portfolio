@@ -112,7 +112,7 @@ pre.code::-webkit-scrollbar-thumb {
 
 .link:active::before {
     height: 100%;
-    transition: 0.2s ease-in;
+    transition: 0.1s;
 }
 
 .onglet:hover
