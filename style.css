@@ -291,9 +291,8 @@ div.contact {
     text-decoration: underline;
 }
 
-.skill
-{
-    font-family: 'Courier New', Courier, monospace;
+div.skill
+{   /*
     margin: 50px;
     margin-top: 5px;
     border-left: solid white 4px;
@@ -302,7 +301,27 @@ div.contact {
     padding-top: 1px;
     padding-left: 15px;
     transition: 0.7s;
-    
+    */
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 1rem;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0px 0px 15px 1px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /*border: solid white*/
+}
+
+.skill details {
+    background-color: transparent;
+    border-bottom: solid 3px rgb(106, 106, 106);
+    margin-top: 0px;
+}
+
+.skill summary {
+    background-color: transparent;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 640px) {
@@ -310,20 +329,6 @@ div.contact {
         margin: 20px;
         width: 85%;
     }
-}
-
-.alignement-skill
-{
-    font-size: 19px;
-    margin: 20px;
-    display: flex;
-    gap: 7px;
-}
-
-.paragraph-skillName
-{
-    margin-left: 15px;
-    line-height: 1.36;
 }
 
 @media (max-width: 640px) {
